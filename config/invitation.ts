@@ -27,6 +27,22 @@ export const invitationCatalog: InvitationCatalog = {
   },
   presets: [
     {
+      slug: "carousel-of-memories",
+      title: "Carousel of Memories",
+      couple: "Luna & Arga",
+      theme: "Cinematic Memory Gallery",
+      palette: {
+        primary: "#d4a373",
+        secondary: "#f6c89f",
+        accent: "#ede0d4",
+      },
+      excerpt:
+        "An intimate 3D gallery where every scroll rotates a carousel of Luna & Arga's treasured memories.",
+      eventDate: "2025-11-22T18:30:00+07:00",
+      venue: "The Atrium Lumière, Jakarta",
+      timezone: "Asia/Jakarta",
+    },
+    {
       slug: "the-journey-of-us",
       title: "The Journey of Us",
       couple: "Ayla & Rendra",
