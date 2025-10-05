@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #ec4899;
+  --color-secondary: #f97316;
+  --color-accent: #22d3ee;
+}
+
+[data-theme="nocturne"] {
+  --color-primary: #7c3aed;
+  --color-secondary: #f472b6;
+  --color-accent: #22d3ee;
+}
+
+[data-theme="evergreen"] {
+  --color-primary: #047857;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+}

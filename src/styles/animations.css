@@ -1,0 +1,7 @@
+.motion-fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.motion-float {
+  animation: float 6s ease-in-out infinite;
+}
