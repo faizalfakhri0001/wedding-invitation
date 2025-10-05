@@ -72,5 +72,21 @@ export const invitationCatalog: InvitationCatalog = {
       venue: "The Forest Chapel, Bandung",
       timezone: "Asia/Jakarta",
     },
+    {
+      slug: "road-to-forever",
+      title: "Road to Forever",
+      couple: "Nara & Dimas",
+      theme: "Sunset Road-Trip",
+      palette: {
+        primary: "#f97316",
+        secondary: "#38bdf8",
+        accent: "#fcd34d",
+      },
+      excerpt:
+        "A horizontal-scroll road journey that guides guests through milestones before arriving at Nara & Dimas' celebration.",
+      eventDate: "2025-07-12T16:00:00+07:00",
+      venue: "Serenity Garden Pavilion, Bandung",
+      timezone: "Asia/Jakarta",
+    },
   ],
 };
