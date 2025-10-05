@@ -15,3 +15,9 @@
   --color-secondary: #10b981;
   --color-accent: #f59e0b;
 }
+
+[data-theme="sunset-drive"] {
+  --color-primary: #f97316;
+  --color-secondary: #38bdf8;
+  --color-accent: #fcd34d;
+}
