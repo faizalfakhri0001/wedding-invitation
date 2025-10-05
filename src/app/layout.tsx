@@ -3,6 +3,7 @@ import "./globals.css";
 import "@styles/animations.css";
 import "@styles/themes.css";
 import { RootProviders } from "@components/layout/RootProviders";
+import { SmoothScrollProvider } from "@components/layout/SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -23,11 +24,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen bg-white text-slate-900">
-        <RootProviders>
-          <div className="flex min-h-screen flex-col">
-            {children}
-          </div>
-        </RootProviders>
+        <SmoothScrollProvider>
+          <RootProviders>
+            <div className="flex min-h-screen flex-col">
+              {children}
+            </div>
+          </RootProviders>
+        </SmoothScrollProvider>
       </body>
     </html>
   );
