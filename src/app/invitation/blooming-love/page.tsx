@@ -1,29 +1,34 @@
 import type { Metadata } from "next";
 import { BaseInvitationLayout } from "@components/layout/BaseInvitationLayout";
-import { PageSection } from "@components/shared/PageSection";
+import { BloomingLoveHero } from "./components/BloomingLoveHero";
+import { BloomingLoveOverviewSection } from "./components/BloomingLoveOverviewSection";
+import { GardenMemoriesSection } from "./components/GardenMemoriesSection";
+import { ProposalSection } from "./components/ProposalSection";
+import { WeddingBlossomSection } from "./components/WeddingBlossomSection";
+import { GuestRsvpSection } from "./components/GuestRsvpSection";
 
 export const metadata: Metadata = {
   title: "Blooming Love",
-  description: "Placeholder layout for the Blooming Love invitation variant.",
+  description: "A cinematic wedding invitation inspired by a botanical journey that blooms with every scroll.",
 };
 
 export default function BloomingLovePage() {
   return (
     <BaseInvitationLayout
       theme="evergreen"
-      hero={
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="font-script text-3xl text-brand-500">Botanical Dream</p>
-          <h1 className="font-display text-5xl">Blooming Love</h1>
-          <p className="mt-4 text-slate-600">
-            Tailor this page with custom illustrations, parallax backgrounds, or GSAP powered sequences.
-          </p>
+      hero={<BloomingLoveHero />}
+      footer={
+        <div className="space-y-2">
+          <p>May every step of Faizal &amp; Jannah&apos;s journey continue to bloom with grace.</p>
+          <p className="text-xs text-slate-400">Designed as part of the Botanical Dream invitation series.</p>
         </div>
       }
     >
-      <PageSection title="Overview">
-        <p>This page intentionally left as a scaffold. Populate it with bespoke Blooming Love content.</p>
-      </PageSection>
+      <BloomingLoveOverviewSection />
+      <GardenMemoriesSection />
+      <ProposalSection />
+      <WeddingBlossomSection />
+      <GuestRsvpSection />
     </BaseInvitationLayout>
   );
 }
